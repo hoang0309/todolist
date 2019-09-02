@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=m">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" media="all" href="light.css" id="theme">
+    <title>My to do list</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body id="bodycolor" onload="getItem()" >
+    <div id="khoi1" class="tv">
+        <div id="myDIV" class="header">
+            <h2>My To Do List</h2>
+            <input  type="text" id="myInput" class='input' placeholder="Any plans?                       || Press enter! ">
+
+        </div>
+        <ul style="list-style-type:none" id="myUL">
+            <li id="list">
+                <!-- JS will render data here  -->
+            </li>
+        </ul>
+    <script src="new-project.js"></script>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+            <a class="closebtn" onclick="closeNav()">x</a>
+            <button id="sw">Blue</button>
+            <button id="sw2">Dark</button>
+            <button id="sw3">Green</button>
+            <button id="sw4">Yellow</button>
+            <button id="sw5">Comic</button>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; Change theme</button>
+    </div>
+
+    <!-- <script>
+        $(".addBtn").on("click", function() {
+            console.log("successs !!!!")
+        })
+    </script> -->
+
+    <script src="tkreq.js"></script>
+</body>
+</html>
